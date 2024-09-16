@@ -13,7 +13,7 @@ config.test_format = lit.formats.ShTest(not llvm_config.use_lit_shell)
 
 config.suffixes = ['.mlir']
 config.test_source_root = os.path.dirname(__file__)
-config.test_exec_root = os.path.join(config.triton_obj_root, 'tests')
+config.test_exec_root = os.path.join(config.project_binary_dir, 'tests')
 
 config.substitutions.append(('%PATH%', config.environment['PATH']))
 config.substitutions.append(('%shlibext', config.llvm_shlib_ext))
