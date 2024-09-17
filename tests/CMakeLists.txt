@@ -21,6 +21,6 @@ set(LIT_ARGS "-Dfilecheck=${FILECHECK_PATH}")
 
 
 add_lit_testsuite(check-mlir-tutorial "Running mlir-exp tests"
-    ${CMAKE_CURRENT_BINARY_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}
     DEPENDS ${MLIR_TUTORIAL_TEST_DEPENDS}
 )
